@@ -18,7 +18,7 @@ Steps to reproduce the dataset are listed in ![source]()
 
 ## Plan of action
 
-* Plan to wrangle data in python and visualize in R. Will use Feather to interchange.
+* Plan to wrangle data in python and visualize in R. Will use Feather to transfer data.
 
 * We will plot Popularity Vs Genre for the last 5 years and compare it with 5 years before that.
 
