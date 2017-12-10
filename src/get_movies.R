@@ -1,14 +1,15 @@
 #! /usr/bin/env Rscript
 #
-# download_mv_data.R
+# get_movies.R
 # 
 # Sidd Arora Nov. 2017
 #
 # This script unzips a dataset from the data folder
 # and copies to directory provided
 #
-#
-# Dependicies: Readr package
+# Usage:
+# 
+# Packages used: Readr package
 
   library(readr)
   
@@ -19,7 +20,7 @@
   
   # define main function
   main <- function() {
-    
+    #unzips file to the directory mentioned.
     unzip(zipFile,exdir=outDir)
  
   }
