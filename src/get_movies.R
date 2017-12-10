@@ -5,7 +5,7 @@
 # Sidd Arora Nov. 2017
 #
 # This script unzips a dataset from the data folder
-# and copies to folder provided
+# and copies to directory provided
 #
 #
 # Dependicies: Readr package
