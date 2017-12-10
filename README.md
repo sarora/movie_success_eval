@@ -25,26 +25,21 @@ To download the data from Kaggle, initially I used ![Kaggle Cli](https://github.
 
 My analysis is reproducible using four scripts which **should** be run from the **src** directory, in the following order, and with the expected commands:
 
-1. `get_movies.R` : Unzips a dataset from the data folder and copies to **directory** provided.
-
-**Command:**
+1. `get_movies.R` : Unzips a dataset from the data folder and copies to **directory** provided. The command is
 
   `Rscript get_movies.R ../data/movie_data_set_zipped.zip ../data`
 
-2. `clean_movies.R`: Imports unzipped raw data from 1, cleans it, and extracts genres for different movies. Cleaned data exported as csv to a specified path.
 
-**Command:**
+2. `clean_movies.R`: Imports unzipped raw data from 1, cleans it, and extracts genres for different movies. Cleaned data exported as csv to a specified path. The command is
 
   `Rscript clean_movies.R ../data/tmdb_5000_movies.csv ../results/resources/cleaned_movies.csv`
 
-3. `figure_generator.R`: Reads in cleaned dataset from (2) and generates the figures for the final report in a specified path.
 
-**Command**
+3. `figure_generator.R`: Reads in cleaned dataset from (2) and generates the figures for the final report in a specified path. The command is:
 
 `Rscript plot_data.R ../results/resources/cleaned_movies.csv ../results/resources/genre_plot.png`
 
 
-4. Generates the final report. The Rmd lives in the src directory.
+4. Generates the final report. The Rmd lives in the src directory. The command is:
 
-**Command**
 ``Rscript -e 'ezknitr::ezknit("movie_dataset_analysis.Rmd", out_dir = "../doc")'``
