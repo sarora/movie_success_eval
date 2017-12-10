@@ -25,7 +25,7 @@ To download the data from Kaggle, initially I used ![Kaggle Cli](https://github.
 
 My analysis is reproducible using four scripts which **should** be run from the **src** directory, in the following order, and with the expected commands:
 
-1. `get_movies.R` : Unzips a dataset from the data folder and copies to **directory** provided. The command is
+1. `get_movies.R` : Unzips a dataset from the data folder and copies to **directory** provided. The command is:
 
   `Rscript get_movies.R ../data/movie_data_set_zipped.zip ../data`
 
@@ -37,7 +37,7 @@ My analysis is reproducible using four scripts which **should** be run from the 
 
 3. `figure_generator.R`: Reads in cleaned dataset from (2) and generates the figures for the final report in the results folder. The command is:
 
-`Rscript plot_data.R ../results/resources/cleaned_movies.csv
+`Rscript plot_data.R ../results/resources/cleaned_movies.csv`
 
 4. Generates the final report. The Rmd lives in the src directory. The command is:
 
