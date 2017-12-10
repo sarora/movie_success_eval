@@ -10,7 +10,7 @@ To download the data from Kaggle, initially I used ![Kaggle Cli](https://github.
 
 ## Question
 
-> Which genre of movies released have been most frequent in the last 5 years. Was it different 5 years before that? What about money spent on each of the genres? Compare the Mean budget and Mean revenue per genre. Will also be interesting to explore the genre with highest and lowest rating.
+> Which genre of movies released have been most frequent in the last 5 years. Was it different 5 years before that? What about money spent on each of the genres? Compare the Mean budget and Mean revenue per genre. Will also be interesting to explore the genre with highest and lowest rating. 
 
 ### Next Milestone
 >* Distribution of ratings across various genres
@@ -30,7 +30,7 @@ My analysis is reproducible using four scripts which **should** be run from the 
   `Rscript get_movies.R ../data/movie_data_set_zipped.zip ../data`
 
 
-2. `clean_movies.R`: Imports unzipped raw data from 1, cleans it, and extracts genres for different movies. Cleaned data exported as csv to a specified path. The command is
+2. `clean_movies.R`: Imports unzipped raw data from 1, cleans it, and extracts genres for different movies. Cleaned data exported as csv to a specified path. The command is:
 
   `Rscript clean_movies.R ../data/tmdb_5000_movies.csv ../results/resources/cleaned_movies.csv`
 
