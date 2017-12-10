@@ -6,7 +6,7 @@
 #
 # Takes raw data for movies, cleans it, and summarises genres for different movies. Cleaned data exported as csv to a specified path.
 #
-# Usage: Rscript clean_free_movies.R ../data/tmdb_5000_movies.csv <path>
+# Usage: Rscript clean_free_movies.R ../data/tmdb_5000_movies.csv <user specific path>
 #
 # Packages used: jsonlite, lubridate, purrrr, tidyverse, forcats.
 
@@ -18,15 +18,15 @@ library(forcats)
 
 # command line args
 args <- commandArgs(trailingOnly = TRUE)
-file <- args[1]
-path <- args[2]
+input_file <- args[1]
+output_file <- args[2]
 
 
 # function to clean and summarise data
 main <- function() {
   
   # assign the file to read in
-  movies <-  file
+  movies <-  input_file
   
   #read in data
   movie_data <- read.csv(movies, header=TRUE, sep=",")
@@ -60,7 +60,7 @@ main <- function() {
   
   
   # export to path specified
-  write_csv(movie_data, path)
+  write_csv(movie_data, output_file)
   
 }
 
