@@ -35,10 +35,9 @@ My analysis is reproducible using four scripts which **should** be run from the 
   `Rscript clean_movies.R ../data/tmdb_5000_movies.csv ../results/resources/cleaned_movies.csv`
 
 
-3. `figure_generator.R`: Reads in cleaned dataset from (2) and generates the figures for the final report in a specified path. The command is:
+3. `figure_generator.R`: Reads in cleaned dataset from (2) and generates the figures for the final report in the results folder. The command is:
 
-`Rscript plot_data.R ../results/resources/cleaned_movies.csv ../results/resources/genre_plot.png`
-
+`Rscript plot_data.R ../results/resources/cleaned_movies.csv
 
 4. Generates the final report. The Rmd lives in the src directory. The command is:
 
