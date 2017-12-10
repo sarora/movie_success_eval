@@ -9,33 +9,48 @@ output:
 
 
 
-## R Markdown
+# IMDB Movie Dataset Analysis
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+![Frequency of Movies per Genre](../results/resources/Frequency.png)
 
 
-```r
-summary(cars)
-```
+* *Drama* is still the most frequent genre over the last decade.
 
-```
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-```
+* *More thrillers* have released in the last 5 years.
 
-## Including Plots
+* *More sci-fi* movies in the last 5 years as well.
 
-You can also embed plots, for example:
 
-![plot of chunk pressure](movie_dataset_analysis/pressure-1.png)
+![Average Budget per Genre](../results/resources/AverageBudget.png)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+* *Fantasy* eclipsed *Adventure* in the last 5 years. 
+
+* *Animation* dropped in the last few years, *Science Fiction* gained traction 
+
+
+
+![Average Revenue per Genre](../results/resources/AverageRevenue.png)
+
+
+
+
+
+
+* *Animation* generates the most revenue over the last decade.
+
+
+* *Thriller* movies faced a very significant drop in their earnings in the last 5 years.
+
+
+
+
+
+
+
+
 
 
