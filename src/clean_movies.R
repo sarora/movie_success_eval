@@ -4,7 +4,7 @@
  
 # Sidd Arora, Dec, 2017
 #
-# Takes raw data for movies, cleans it, and summarises genres for different movies. Cleaned data exported as csv to a specified path.
+# Takes raw data for movies, cleans it, and extracts genres for different movies. Cleaned data exported as csv to a specified path.
 #
 # Usage: Rscript clean_free_movies.R ../data/tmdb_5000_movies.csv <user specific path>
 #
