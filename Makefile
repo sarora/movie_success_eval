@@ -14,13 +14,8 @@ data/tmdb_5000_movies.csv:	data/movie_data_set_zipped.zip	src/get_movies.R
 results/resources/cleaned_movies.csv:	data/tmdb_5000_movies.csv src/clean_movies.R
 										Rscript src/clean_movies.R data/tmdb_5000_movies.csv results/resources/cleaned_movies.csv
 # Generate Images
-summary_plots:	cowplot results/resources/cleaned_movies.csv	src/plot_data.R
+summary_plots:	results/resources/cleaned_movies.csv	src/plot_data.R
 										Rscript src/plot_data.R	results/resources/cleaned_movies.csv
-#install cowplot
-
-cowplot:
-										Rscript -e "install.packages('cowplot', repos = 'http://cran.us.r-project.org')"
-
 # Generate report
 report:	summary_plots	src/movie_dataset_analysis.Rmd
 										Rscript -e 'ezknitr::ezknit("src/movie_dataset_analysis.Rmd", out_dir = "doc")'
