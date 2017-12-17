@@ -16,6 +16,28 @@ To download the data from Kaggle, initially I used ![Kaggle Cli](https://github.
 
 > Used R throughout for cleaning and visualization. The genre column movie dataset is in JSON format. Parsed JSON using jsonlite library. Each movie can be associated with multiple genres (some upto 7). I will only be considering primary genre for simplicity. I can then group genre to find different statistics per genre, and plot them.
 
+## Reproducing my analysis using Docker. Usage instructions:
+
+The docker image contains all software/packages
+necessary to reproduce the results. Please have docker installed and git clone my repository. You can run the following command to run the analysis from beginning to end (you will need only change the local path <local-path-to-project-repository> to point to the location of the project repo on your local machine):
+
+
+`docker run --rm -it -v /path-to-the-cloned-repo-on-your-computer/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval'`
+
+
+For example:
+
+`docker run --rm -it -v /c/Users/sid/Documents/GitHub/Block-3MDS/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval'`
+
+
+You can use the Docker image to remove the results with the following command:
+
+`docker run --rm -it -v /path-to-the-cloned-repo-on-your-computer/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval' clean`
+
+For example:
+
+`docker run --rm -it -v /c/Users/sid/Documents/GitHub/Block-3MDS/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval' clean`
+
 
 ## Explicit Terminal commands that are used in Makefile are as follows.
 
@@ -23,7 +45,7 @@ My analysis is reproducible using four scripts which **should** be run from the 
 
 1. `get_movies.R` : Unzips a dataset from the data folder and copies to **directory** provided. The command is
 
-  `Rscript get_movies.R /data/movie_data_set_zipped.zip data`
+  `Rscript src/get_movies.R /data/movie_data_set_zipped.zip data`
 
 
 2. `clean_movies.R`: Imports unzipped raw data from 1, cleans it, and extracts genres for different movies. Cleaned data exported as csv to a specified path. The command is
