@@ -58,7 +58,7 @@ main <- function() {
   
   compare_plot_fre <- plot_grid(m0812,mlast5, ncol=2)
   
-  ggsave(filename = "../results/resources/Frequency.png", plot = compare_plot_fre, width = 10, height = 3.5, dpi = 100)
+  ggsave(filename = "results/resources/Frequency.png", plot = compare_plot_fre, width = 10, height = 3.5, dpi = 100)
 
   
   ############# plot 2- Avg revenue #######################
@@ -83,7 +83,7 @@ main <- function() {
   
   compare_plot_ar <- plot_grid(m_08_12_ar,m_last_5_ar, ncol=2)
   
-  ggsave(filename = "../results/resources/AverageRevenue.png", plot=compare_plot_ar,width=12, height=4.5,dpi = 100)
+  ggsave(filename = "results/resources/AverageRevenue.png", plot=compare_plot_ar,width=12, height=4.5,dpi = 100)
   
   
   
@@ -112,7 +112,7 @@ main <- function() {
   
   ccompare_plot_b <- plot_grid(m_08_12_ab,m_last_5_ab, ncol=2)
   
-  ggsave(filename = "../results/resources/AverageBudget.png", plot=ccompare_plot_b,width=12,height=4.5,dpi = 100)
+  ggsave(filename = "results/resources/AverageBudget.png", plot=ccompare_plot_b,width=12,height=4.5,dpi = 100)
  
 
 }
