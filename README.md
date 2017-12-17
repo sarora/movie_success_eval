@@ -19,16 +19,7 @@ To download the data from Kaggle, initially I used ![Kaggle Cli](https://github.
 ## Reproducing my analysis using Docker. Usage instructions:
 
 The docker image contains all software/packages
-necessary to reproduce the results. Please have docker installed and git clone my repository. You can run the following command to run the analysis from beginning to end (you will need only change the local path <local-path-to-project-repository> to point to the location of the project repo on your local machine):
-
-
-`docker run --rm -it -v /path-to-the-cloned-repo-on-your-computer/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval'`
-
-
-For example:
-
-`docker run --rm -it -v /c/Users/sid/Documents/GitHub/Block-3MDS/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval'`
-
+necessary to reproduce the results. Please have docker installed and  git clone my repository. You can run the following command to run the analysis from beginning to end (you will need only change the local path <local-path-to-project-repository> to point to the location of the project repo on your local machine):
 
 You can use the Docker image to remove the results with the following command:
 
@@ -37,6 +28,16 @@ You can use the Docker image to remove the results with the following command:
 For example:
 
 `docker run --rm -it -v /c/Users/sid/Documents/GitHub/Block-3MDS/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval' clean`
+
+
+Then to reproduce my analysis from start to beginning.
+
+`docker run --rm -it -v /path-to-the-cloned-repo-on-your-computer/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval'`
+
+For example:
+
+`docker run --rm -it -v /c/Users/sid/Documents/GitHub/Block-3MDS/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval'`
+
 
 
 ## Explicit Terminal commands that are used in Makefile are as follows.
