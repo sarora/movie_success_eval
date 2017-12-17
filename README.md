@@ -21,6 +21,11 @@ To download the data from Kaggle, initially I used ![Kaggle Cli](https://github.
 The docker image contains all software/packages
 necessary to reproduce the results. Please have docker installed and  git clone my repository. You can run the following command to run the analysis from beginning to end (you will need only change the local path <local-path-to-project-repository> to point to the location of the project repo on your local machine):
 
+Download for Docker
+
+
+`docker pull siddfury/movie_success_eval`
+
 You can use the Docker image to remove the results with the following command:
 
 `docker run --rm -it -v /path-to-the-cloned-repo-on-your-computer/movie_success_eval:/home/movie_success_eval siddfury/movie_success_eval make -C '/home/movie_success_eval' clean`
