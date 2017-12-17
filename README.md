@@ -12,10 +12,6 @@ To download the data from Kaggle, initially I used ![Kaggle Cli](https://github.
 
 > Which genre of movies released have been most frequent in the last 5 years. Was it different 5 years before that? What about money spent on each of the genres? Compare the Mean budget and Mean revenue per genre. Will also be interesting to explore the genre with highest and lowest rating.
 
-### Next Milestone
->* Distribution of ratings across various genres
->* Explore actors associated with these popular genres (time permitting).
-
 ## Plan of action / Visualization
 
 > Used R throughout for cleaning and visualization. The genre column movie dataset is in JSON format. Parsed JSON using jsonlite library. Each movie can be associated with multiple genres (some upto 7). I will only be considering primary genre for simplicity. I can then group genre to find different statistics per genre, and plot them.
